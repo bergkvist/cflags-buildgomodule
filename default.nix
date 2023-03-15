@@ -5,7 +5,6 @@
 }:
 pkgs.buildGoModule {
   name = "cflags-buildgomodule";
-  buildInputs = [ pkgs.go_1_20 ];
   src = builtins.path {
     name = "main";
     path = ./.;
