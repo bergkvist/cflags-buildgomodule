@@ -6,7 +6,7 @@
 pkgs.buildGoModule {
   name = "cflags-buildgomodule";
   src = builtins.path {
-    name = "main";
+    name = "cflags-buildgomodule";
     path = ./.;
     filter = path: type: builtins.elem (baseNameOf path) [
       "main.go"
